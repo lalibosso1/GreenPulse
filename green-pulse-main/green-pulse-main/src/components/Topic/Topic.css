@@ -1,0 +1,92 @@
+ .card-topic {
+    width: 100%;
+    max-width: 300px;
+    min-width: 200px;
+    height: 250px;
+    background-color: #eeeeee;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+    border: 2px solid rgba(7, 7, 7, 0.12);
+    font-size: 16px;
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: default;
+    transition: all 0.3s ease;
+ }
+
+ .icon-topic {
+    margin: 0 auto;
+    width: 100%;
+    height: 80px;
+    max-width: 80px;
+    background: linear-gradient(90deg,
+          #aecc8d 0%,
+          #789756 40%,
+          rgba(0, 0, 0, 0.65) 60%);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: all 0.8s ease;
+    background-position: 0px;
+    background-size: 200px;
+ }
+ 
+ .material-icons.md-36 {
+    font-size: 36px;
+
+ }
+
+ .card-topic .title-topic {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    margin-top: 30px;
+    color: #747474;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+ }
+
+ .card-topic .text-topic {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 20px;
+    color: #747474;
+    font-weight: 200;
+    letter-spacing: 2px;
+    opacity: 0;
+    max-height: 0;
+    transition: all 0.3s ease;
+ }
+
+ .card-topic:hover {
+    height: 410px;
+ }
+
+ .card-topic:hover .text-topic {
+    transition: all 0.3s ease;
+    opacity: 1;
+    max-height: 40px;
+ }
+
+ .card-topic:hover .icon-topic {
+    background-position: -120px;
+    transition: all 0.3s ease;
+ }
+
+ .card-topic:hover .icon-topic i {
+    background: linear-gradient(90deg, #aecc8d 33%, #576b41);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease;
+ }
+
